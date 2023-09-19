@@ -1,0 +1,15 @@
+import numpy as np 
+import matplotlib.pyplot as plt 
+import torch 
+import torch.nn as nn
+import os 
+
+files = os.listdir("data/")
+file = files[0]
+with open(os.path.join("data", file), "r") as f:
+    lines = f.readlines()
+
+for line in lines:
+    chars = line.split("output")
+    print(len(chars))
+    break 
